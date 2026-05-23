@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vq&we$urrgpsua8do+f-rw9xhxn%@^uvf-k=joxy_%i_p48%g5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sola.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'solabomi.pythonanywhere.com']
 
 
 # Application definition
