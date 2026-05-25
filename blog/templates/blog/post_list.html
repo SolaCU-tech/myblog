@@ -28,25 +28,18 @@
         <section>
             <h2>Latest Blog Posts</h2>
 
+            {% for post in posts%}
             <article>
-                <h3>My First Blog Post</h3>
-                <time datetime="2026-05-23">May 23, 2026</time>
+                <h3>{{ post.title }}</h3>
+                <time datetime="{{ post.published_date }}">{{ post.published_date }}</time>
 
                 <p>
-                    This is my first blog post created with Django. I am learning how to build websites
-                    using Python, HTML, CSS, GitHub, and PythonAnywhere.
-                </p>
-
-                <p>
-                    <strong>Topic:</strong> Django Learning Journey
-                </p>
-
-                <p>
-                    <em>"Ἀρχὴ σοφίας φόβος Κυρίου" — The beginning of wisdom is reverence for God.</em>
+                    {{ post.text|linebreaks }}
                 </p>
 
                 <a href="#">Read more</a>
             </article>
+            {%endfor%}
 
             <br>
 
